@@ -51,6 +51,12 @@ public class ProductController {
 		Product existingProduct = productRepository.findById(id)
 				.orElseThrow(() -> new RuntimeException("Product not found"));
 		existingProduct.setName(product.getName());
+		existingProduct.setIsActive(product.isActive);
+		existingProduct.setCostPrice(product.costPrice);
+		existingProduct.setBarCode(product.barCode);
+		existingProduct.setMeasureUnit(product.getMeasureUnit());
+		existingProduct.setBrand(product.brand);
+		existingProduct.setName(product.name);
 		return productRepository.save(existingProduct);
 	}
 

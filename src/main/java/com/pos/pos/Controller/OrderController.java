@@ -24,6 +24,7 @@ public class OrderController {
 		return orderRepository.findAll();
 	}
 
+	// create an order (final order)
 	@PostMapping
 	public Order createOrder(Order Order) {
 		return orderRepository.save(Order);

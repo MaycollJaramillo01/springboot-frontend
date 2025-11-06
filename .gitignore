@@ -1,45 +1,11 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-## Application properties
-# This file is used to define properties for the application.
-# It is not intended to be committed to version control.
-# You can create a local version of this file to override the default properties.
-# Copy this file to application-local.properties and modify as needed.
-# For example, you can set the server port or database connection properties.
-src/main/resources/application.properties
-src/main/resources/application-local.properties
-
-# Env in infra
-infra/.env
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
+node_modules
+.DS_Store
+/dist
+.vscode
 .idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
-.vscode/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tsbuildinfo
+coverage

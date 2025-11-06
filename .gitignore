@@ -43,3 +43,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Frontend assets
+frontend/node_modules/
+frontend/dist/
